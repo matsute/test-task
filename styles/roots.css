@@ -1,0 +1,70 @@
+@import url(fonts.css);
+
+:root {
+    --red-color: #DD2211;
+    --redGrey-color: #C62314;
+    --blueDark-color: #130E27;
+    --dark-color: #161616;
+    --white-color: #ffffff;
+    --greyLight-color: #EFEFEF;
+
+    --main-font: 'Montserrat', Arial, sans-serif;
+    --second-font: 'PTSerif', Arial, sans-serif;
+}
+
+h1, 
+h2, 
+h3, 
+h4,
+h5,
+h6 {
+    font-family: var(--main-font);
+}
+
+p,  
+a {
+    font-family: var(--second-font);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+[class="SIZE"] {
+    max-width: 1440px;
+    margin: auto;
+}
+
+[class="container"] {
+    max-width: 1060px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+[class="hidden"] {
+    display: none;
+}
+
+.button {
+    display: inline-block;
+
+    cursor: pointer;
+    font: 500 1em/1.2 var(--main-font);
+    text-wrap: nowrap;
+    color: var(--white-color);
+    background-color: var(--redGrey-color);
+    border-radius: 5px;
+    padding: 20px 70px;
+
+    transition: all .3s;
+}
+
+.button:hover {
+    background-color: var(--red-color);
+}

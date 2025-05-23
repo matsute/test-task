@@ -1,0 +1,254 @@
+@import url(roots.css);
+@import url(fonts.css);
+
+svg *[fill] {
+    color: var(--blueDark-color);
+}
+
+#main_services {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    background-color: var(--white-color);
+}
+
+#main_services h2{
+        font: 700 3em/1.2 var(--main-font);
+        text-transform: uppercase;
+}
+
+.service-red {
+    color: var(--redGrey-color);
+}
+
+.service-blue {
+    color: var(--blueDark-color);
+}
+
+.main_services {
+    display: grid;
+    align-items: end;
+    justify-content: space-between;
+    grid-template-columns: repeat(4, 150px);
+    
+
+    gap: 0 20px;
+    padding-top: 82px;
+}
+
+.main_services_block {
+    text-align: center;
+    max-width: 160px;
+}
+
+.main_services_block > p {
+    font: 1em/1.2 var(--second-font);
+    padding-top: 40px;
+}
+
+/* 850 */
+
+@media (max-width: 850px) {
+    .main_services {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding-top: 42px;
+    }
+
+    .main_services_block {
+        justify-self: center;
+    }
+
+    .main_services_block > p {
+        font-size: 1em;
+        padding-top: 20px;
+    }
+}
+
+/* 450 */
+
+@media (max-width: 450px) {
+    .main_services {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .main_services_block {
+        justify-self: center;
+    }
+
+    .services h2 {
+        font-size: 2em;
+    }
+    
+    .main_services_block > p {
+        font-size: 0.8em;
+    }
+}
+
+/* Story */
+
+#main_story {
+    background-color: var(--blueDark-color);
+    padding: 30px 0;
+}
+
+.main_story {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_story > p {
+    font: 1em/1.2 var(--second-font);
+    color: var(--white-color);
+    max-width: 500px;
+
+    margin-right: 177px;
+}
+
+/* 850 */
+
+@media (max-width: 850px) {
+    .main_story > p {
+        font-size: 0.8em;
+    }
+}
+
+/* 700 */
+
+@media (max-width: 700px) {
+    .main_story {
+        flex-direction: column;
+        text-align: center;
+    }
+    .main_story > p {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+
+/* PRICING */
+
+#main_pricing {
+    background-color: var(--greyLight-color);
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.main_pricing > h2 {
+    font: 700 3em/1.2 var(--main-font);
+    color: var(--blueDark-color);
+    text-align: center;
+}
+
+.main_pricing_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 20px;
+    align-items: center;
+
+    padding-top: 50px;
+}
+
+.main_pricing_block {
+    text-align: center;
+    background-color: var(--white-color);
+    max-width: 340px;
+    padding: 35px 20px;
+}
+
+.main_pricing_block > h3 {
+    font: 1.2em/1.2 var(--second-font);
+    text-transform: capitalize;
+}
+
+.main_pricing_block > p {
+    font: 700 2.5em/1.2 var(--main-font);
+    text-transform: uppercase;
+    color: var(--redGrey-color);
+    padding-top: 40px;
+}
+
+.main_pricing_block > ul {
+    padding-top: 30px;
+    margin-bottom: 40px;
+}
+
+.main_pricing_block > ul li {
+    font: 1em/1.2 var(--second-font);
+}
+
+.main_pricing_block > .main_pricing_button {
+    font: 500 1em/1.2 var(--main-font);
+    padding: 11px 81px;
+}
+
+/* 850 */
+
+@media (max-width: 850px) {
+    .main_pricing_list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .main_pricing_block {
+        width: 280px;
+    }
+
+    .main_pricing_block:nth-child(2n + 1) {
+        justify-self: flex-end;
+    }  
+
+    .main_pricing_block > p {
+        font-size: 2.2em;
+    }
+
+    .main_pricing_block > .main_pricing_button {
+        padding: 8px 60px;
+    }
+}
+
+/* 600 */
+
+@media (max-width: 600px) {
+    #main_pricing {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .main_pricing_list {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        padding-top: 30px;
+    }
+
+    .main_pricing_block {
+        justify-self: center;
+        width: 260px;
+    }
+
+    .main_pricing_block:nth-child(2n + 1) {
+        justify-self: center;
+    } 
+
+    .main_pricing_block > h3 {
+        font-size: 1em;
+    }
+
+    .main_pricing_block > p {
+        padding-top: 20px;
+    }
+
+    .main_pricing_block > ul {
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .main_pricing_block > ul li {
+        font-size: 0.9em;
+    }
+
+    .main_pricing_block > .main_pricing_button {
+        padding: 8px 40px;
+    }
+}

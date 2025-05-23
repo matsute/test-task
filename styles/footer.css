@@ -1,0 +1,47 @@
+@import url(roots.css);
+@import url(fonts.css);
+
+#footer {
+    background-color: var(--blueDark-color);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.footer > p {
+    font: 1.2em/1.2 var(--second-font);
+    color: var(--white-color);
+}
+
+.footer-red {
+    color: var(--redGrey-color);
+}
+
+/* 850 */
+
+@media (max-width: 850px) {
+    .footer > p {
+        font-size: 1em;
+    }
+}
+
+/* 720 */
+
+@media (max-width: 720px) {
+    .footer {
+        text-align: center;
+        flex-direction: column;
+        gap: 20px 0;
+    }
+}
+
+
+/* 450 */
+
+@media (max-width: 450px) {
+    
+}
